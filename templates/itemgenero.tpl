@@ -4,7 +4,7 @@
     <div id="is-contenedorPeliculasGenero">
         {foreach from=$listaPelis item=peli}
             <section class="is-sectionPeliculaGenero">
-                <img src="{$peli['imagen']}" alt="peli">
+                <img class="imgpelicula" src="{$peli['imagen']}" alt="peli">
                 <p>{$peli['nombre']}</p>
                 <p>{$peli['anio']}</p>
                 <button>

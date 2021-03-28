@@ -28,7 +28,7 @@
     <section id="section-utlimasAgregadas">
         {foreach from=$listaPeliculas item=peli}
             <section class="is-sectionPeliculaGenero">
-                <img src="{$peli['imagen']}" alt="peli">
+                <img class="imgpelicula" src="{$peli['imagen']}" alt="peli">
                 <p>{$peli['nombre']}</p>
                 <p>{$peli['anio']}</p>
                 <button>

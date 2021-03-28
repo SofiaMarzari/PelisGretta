@@ -256,12 +256,47 @@ nav {
     color: brown;
 }
 
-.is-sectionPeliculaGenero>img {
+
+/*PELICULA PARTICULAR*/
+
+#is-sectionPeliculaParticular {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "imgPeli h1Peli h1Peli" "imgPeli pPeli pPeli" "listaComentPeli listaComentPeli listaComentPeli" "formComentPeli formComentPeli formComentPeli";
+}
+
+.imgpelicula {
     margin-left: 27px;
     margin-top: 5%;
     width: 200px;
     height: 300px;
     border-radius: 5%;
+}
+
+#is-sectionPeliculaParticular>img {
+    grid-area: imgPeli;
+}
+
+#is-sectionPeliculaParticular>h1 {
+    grid-area: h1Peli;
+    margin-left: 2%;
+}
+
+#is-sectionPeliculaParticular>p {
+    grid-area: pPeli;
+    margin-left: 2%;
+}
+
+#is-sectionformcomentario {
+    grid-area: formComentPeli;
+    margin-left: 2%;
+}
+
+#section-listaComentarios {
+    grid-area: listaComentPeli;
+    margin-left: 2%;
 }
 
 
@@ -392,8 +427,3 @@ nav {
 .section-formAdd>h1 {
     color: white;
 }
-
-
-/*SECTION VALIDAR CODIGO*/
-
-#section-validarcodigo {}

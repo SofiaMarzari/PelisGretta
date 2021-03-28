@@ -1,8 +1,8 @@
 {include file="header.tpl"}
 {include file="nav.tpl"}
 
-    <section class="is-sectionPeliculaParticular">
-        <img src="{$pelicula[0]['imagen']}" alt="peli">
+    <section id="is-sectionPeliculaParticular">
+        <img class="imgpelicula" src="{$pelicula[0]['imagen']}" alt="peli">
         <h1>{$pelicula[0]['nombre']}</h1>
         <p>{$pelicula[0]['descripcion']}</p>
         <section id="section-listaComentarios">
