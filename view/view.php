@@ -52,6 +52,19 @@
             $this->smarty->display('templates/login.tpl');
         }
 
+        public function verNuevaContraseña($generos){
+            $this->smarty = new Smarty();
+            $this->smarty->assign('listaGeneros', $generos);
+            $this->smarty->assign('admin', false);
+            $this->smarty->display('template/nuevaContraseña.tpl');
+        }
+
+        public function verOlvidePassword($generos){
+            $this->smarty = new Smarty();
+            $this->smarty->assign('listaGeneros', $generos);
+            $this->smarty->assign('admin', false);
+            $this->smarty->display('templates/recuperarCont.tpl');
+        }
         
         public function verAddAdmin($generos){
             $this->smarty = new Smarty();

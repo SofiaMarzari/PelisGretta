@@ -40,7 +40,19 @@
             break;
         case 'olvidePassword':
             $controller = new logincontroller();
+            $controller->mostrarOlvidePassword();
+            break;
+        case 'validarcodigo':
+            $controller = new logincontroller();
+            $controller->validarCodigoRecuperacion();
+            break;
+        case 'recuperarContraseña':
+            $controller = new logincontroller();
             $controller->olvidePassword();
+            break;
+        case 'nuevaPassword':
+            $controller = new logincontroller();
+            $controller->cambiarContraseña();
             break;
         case 'admin':
             $controller = new admincontroller();

@@ -6,7 +6,7 @@
             <input type="text" name="nombre" placeholder="Usuario">
             <input type="password" name="clave" placeholder="Clave">
             <input type="submit" id="btn-submit">
-            <a href="olvidePassword">Olvide mi contraseña</a>
+            <a type="submit" href="olvidePassword">Olvide mi contraseña</a>
         </form>
 
 
@@ -19,4 +19,5 @@
             <input type="submit" id="btn-submit">
         </form>
     </section>
+   
 {include file="foot.tpl"}

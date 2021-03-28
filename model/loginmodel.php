@@ -20,6 +20,12 @@
             $data = $this->db->prepare("INSERT INTO usuario(usuarioNombre, password, mail) VALUES(?,?,?)");
             $data->execute(array($nom, $password, $mail));
         }
+
+        public function modificarPassword($nomUsr, $newpassword){
+            $password = password_hash($newpassword, PASSWORD_DEFAULT);
+            $data = $this->db->prepare("UPDATE usuario SET password=? WHERE usuarioNombre=?");
+            $data->execute(array($password, $nomUsr));
+        }
     }
 
 ?>
