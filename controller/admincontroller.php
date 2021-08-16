@@ -69,16 +69,21 @@
         
         public function agregarComentario($idPeli){
             $coment = $_POST['comentario'];
-            session_start();
+            //session_start();
             $nomUsr = $_SESSION['nombreUsuario'];
             if(isset($coment)){
                 $existePeli = $this->modelAdmin->getPeliculaId($idPeli);
                 $idUsr = $this->modelLogin->buscarExistenciaUsr($nomUsr);
                 if(isset($existePeli)){
-                    $this->modelAdmin->addComentario($coment, $idPeli, $idUsr[0]['id_usuario']);
+                    $this->modelAdmin->addComentario($coment, $idPeli, $nomUsr);
                     header('Location: http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF']). '/pelicula/'.$idPeli);
                 }
             }
+        }
+
+        public function eliminarComentario($id_comentario, $idPeli){
+            $this->modelAdmin->deleteComentario($id_comentario);
+            header('Location: http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF']). '/pelicula/'.$idPeli);
         }
     
     }

@@ -85,6 +85,7 @@ class logincontroller{
             header('Location: http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF']). '/login');
         }else{
             $this->model->guardarUsuarioNuevo($nomUsr, $mail, $clave);
+            $this->verificarUsr();
         }
     }
 

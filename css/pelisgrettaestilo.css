@@ -1,429 +1,442 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/df/e6/bb/dfe6bb9dae0dddfeb956fa5467ba39f2.jpg);
+  background-image: url(https://i.pinimg.com/originals/df/e6/bb/dfe6bb9dae0dddfeb956fa5467ba39f2.jpg);
 }
 
 #contenedorPrincipal {
-    background-color: rgba(255, 250, 240, 0.5);
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-areas: "galeria galeria galeria galeria" "admin admin top5 top5" "admin admin top5 top5" "agregarPeliGen agregarPeliGen top5 top5" "agregarPeliGen agregarPeliGen top5 top5" "ultimasAgr ultimasAgr top5 top5" "ultimasAgr ultimasAgr top5 top5";
+  background-color: rgba(255, 250, 240, 0.5);
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "galeria galeria galeria galeria" "admin admin top5 top5" "admin admin top5 top5" "agregarPeliGen agregarPeliGen top5 top5" "agregarPeliGen agregarPeliGen top5 top5" "ultimasAgr ultimasAgr top5 top5" "ultimasAgr ultimasAgr top5 top5";
 }
-
 
 /*ENCABEZADO*/
-
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-header>h1 {
-    font-size: 70px;
-    font-style: italic;
-    color: white;
+header > h1 {
+  font-size: 70px;
+  font-style: italic;
+  color: white;
 }
 
-header>a {
-    margin-right: 5%;
-    margin-top: 3%;
+header > a {
+  margin-right: 5%;
+  margin-top: 3%;
 }
 
 #is-spanTitle {
-    font-family: fantasy;
-    font-style: oblique;
-    font-variant: small-caps;
-    color: white;
+  font-family: fantasy;
+  font-style: oblique;
+  font-variant: small-caps;
+  color: white;
 }
 
-
 /*NAVEGACION*/
-
 nav {
-    border-radius: 10px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+47,6d0019+77 */
-    background: #a90329;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0);
-    /* IE6-9 */
-    height: 35px;
+  border-radius: 10px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+47,6d0019+77 */
+  background: #a90329;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+  /* IE6-9 */
+  height: 35px;
 }
 
 #navUlPrincipal {
-    background: #a90329;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0);
-    /* IE6-9 */
-    display: flex;
-    flex-direction: row;
-    height: 30px;
+  background: #a90329;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+  /* IE6-9 */
+  display: flex;
+  flex-direction: row;
+  height: 30px;
 }
 
-#navUlPrincipal>li {
-    list-style-type: none;
-    color: white;
-    width: 23%;
-    height: 100%;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 5px;
+#navUlPrincipal > li {
+  list-style-type: none;
+  color: white;
+  width: 23%;
+  height: 100%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 5px;
 }
 
 .sobrelosli {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+21,8f0222+44,6d0019+100 */
-    background: rgb(169, 3, 41);
-    /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 21%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 21%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, rgba(169, 3, 41, 1) 21%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+21,8f0222+44,6d0019+100 */
+  background: #a90329;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #a90329 21%, #8f0222 44%, #6d0019 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #a90329 21%, #8f0222 44%, #6d0019 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #a90329 21%, #8f0222 44%, #6d0019 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1)";
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 #is-ulGeneros {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 
-#is-ulGeneros>li {
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    padding: 15% 0% 5% 0%;
-    border-radius: 0% 0% 50% 50%;
-    background: #a90329;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0);
-    /* IE6-9 */
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 5px;
-    position: relative;
-    z-index: 11;
+#is-ulGeneros > li {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  padding: 15% 0% 5% 0%;
+  border-radius: 0% 0% 50% 50%;
+  background: #a90329;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+  /* IE6-9 */
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 5px;
+  position: relative;
+  z-index: 11;
 }
 
-#is-ulGeneros>li>a {
-    text-decoration: none;
-    color: white;
+#is-ulGeneros > li > a {
+  text-decoration: none;
+  color: white;
 }
 
-#navUlPrincipal>li>a {
-    text-decoration: none;
-    color: white;
+#navUlPrincipal > li > a {
+  text-decoration: none;
+  color: white;
 }
-
 
 /*GALERIA*/
-
 #section-galeria {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    grid-area: galeria;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  grid-area: galeria;
 }
 
 .is-imgsGaleria {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    z-index: 1;
+  height: 100%;
+  width: 50%;
+  position: relative;
+  z-index: 1;
 }
-
 
 /*SECTION ULTIMAS AGREGADAS*/
-
 #section-utlimasAgregadas {
-    grid-area: ultimasAgr;
-    margin-left: 0.5%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 90%;
-    height: 100%;
+  grid-area: ultimasAgr;
+  margin-left: 0.5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 90%;
+  height: 100%;
 }
-
 
 /*SECTION TOP 5 INICIO*/
-
 #section-top5 {
-    grid-area: top5;
-    height: 80%;
-    width: 100%;
-    margin-right: 10%;
-    margin-top: 1%;
-    background-color: rgba(128, 0, 0, 0.3);
+  grid-area: top5;
+  height: 80%;
+  width: 100%;
+  margin-right: 10%;
+  margin-top: 1%;
+  background-color: rgba(128, 0, 0, 0.3);
 }
 
-#section-top5>h1 {
-    color: seashell;
-    font-size: 40px;
-    text-shadow: 10px 5px 3px black;
-    text-align: center;
+#section-top5 > h1 {
+  color: seashell;
+  font-size: 40px;
+  text-shadow: 10px 5px 3px black;
+  text-align: center;
 }
 
 .pelisDelTop {
-    background-color: rgba(128, 0, 0, 0.7);
-    width: 90%;
-    height: 30%;
-    margin-left: 5%;
-    margin-top: 1%;
-    border-radius: 0% 0% 15% 0%;
+  background-color: rgba(128, 0, 0, 0.7);
+  width: 90%;
+  height: 30%;
+  margin-left: 5%;
+  margin-top: 1%;
+  border-radius: 0% 0% 15% 0%;
 }
 
-
 /*ARTICLE REDES SOCIALES*/
-
 #article-redesSocialesInicio {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    z-index: 7;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 7;
 }
 
 .is-redesSociales {
-    height: 3%;
-    width: 3%;
-    border-radius: 10%;
-    margin: 2px;
+  height: 3%;
+  width: 3%;
+  border-radius: 10%;
+  margin: 2px;
 }
 
-
 /*GENERO PARTICULAR*/
-
 #is-contenedorPeliculasGenero {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
 }
 
 .is-sectionPeliculaGenero {
-    margin: 1%;
-    width: 250px;
-    height: 500px;
-    border-radius: 1%;
+  margin: 1%;
+  width: 250px;
+  height: 500px;
+  border-radius: 1%;
 }
 
 .is-sectionPeliculaGenero:hover {
-    background-color: rgba(128, 0, 0, 0.7);
-    box-shadow: 0px 0px 15px white;
+  background-color: rgba(128, 0, 0, 0.7);
+  box-shadow: 0px 0px 15px white;
 }
 
-.is-sectionPeliculaGenero:hover>p {
-    color: white;
+.is-sectionPeliculaGenero:hover > p {
+  color: white;
 }
 
-.is-sectionPeliculaGenero>p {
-    text-align: center;
-    color: brown;
-    margin: 0%;
+.is-sectionPeliculaGenero p {
+  text-align: center;
+  color: brown;
+  margin: 0%;
 }
 
-.is-sectionPeliculaGenero>button {
-    width: 30%;
-    height: 7%;
-    font-size: 100%;
-    border-style: none;
-    border-radius: 45%;
-    background-color: white;
-    margin-left: 37%;
-    margin-top: 3%;
+.is-sectionPeliculaGenero > button {
+  width: 30%;
+  height: 7%;
+  font-size: 100%;
+  border-style: none;
+  border-radius: 45%;
+  background-color: white;
+  margin-left: 37%;
+  margin-top: 3%;
 }
 
-.is-sectionPeliculaGenero>button>a {
-    text-decoration: none;
-    color: brown;
+.is-sectionPeliculaGenero > button > a {
+  text-decoration: none;
+  color: brown;
 }
-
 
 /*PELICULA PARTICULAR*/
-
 #is-sectionPeliculaParticular {
-    width: 80%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: "imgPeli h1Peli h1Peli" "imgPeli pPeli pPeli" "listaComentPeli listaComentPeli listaComentPeli" "formComentPeli formComentPeli formComentPeli";
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "imgPeli h1Peli h1Peli" "imgPeli pPeli pPeli" "listaComentPeli listaComentPeli listaComentPeli" "formComentPeli formComentPeli formComentPeli";
 }
 
 .imgpelicula {
-    margin-left: 27px;
-    margin-top: 5%;
-    width: 200px;
-    height: 300px;
-    border-radius: 5%;
+  margin-left: 27px;
+  margin-top: 5%;
+  width: 200px;
+  height: 300px;
+  border-radius: 5%;
 }
 
-#is-sectionPeliculaParticular>img {
-    grid-area: imgPeli;
+#is-sectionPeliculaParticular > img {
+  grid-area: imgPeli;
 }
 
-#is-sectionPeliculaParticular>h1 {
-    grid-area: h1Peli;
-    margin-left: 2%;
+#is-sectionPeliculaParticular > h1 {
+  grid-area: h1Peli;
+  margin-left: 2%;
 }
 
-#is-sectionPeliculaParticular>p {
-    grid-area: pPeli;
-    margin-left: 2%;
+#is-sectionPeliculaParticular > p {
+  grid-area: pPeli;
+  margin-left: 2%;
 }
 
+/*COMENTARIOS*/
 #is-sectionformcomentario {
-    grid-area: formComentPeli;
-    margin-left: 2%;
+  grid-area: formComentPeli;
+  background-color: rgba(128, 0, 0, 0.7);
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 50%;
 }
 
-#section-listaComentarios {
-    grid-area: listaComentPeli;
-    margin-left: 2%;
+#sectionComentarios {
+  width: 50%;
+  height: 100%;
+  margin: 2%;
+  grid-area: listaComentPeli;
+  background-color: rgba(128, 0, 0, 0.7);
 }
 
+#sectionComentarios > article {
+  height: 50%;
+}
+
+#sectionComentarios > article > p {
+  color: white;
+  margin-left: 10%;
+  margin-bottom: 0%;
+}
+
+#sectionComentarios > article > p:nth-child(0n+2) {
+  margin-left: 20%;
+  margin-top: 0%;
+}
+
+#btn-deletComent {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  width: 10%;
+  height: 10%;
+  border-radius: 10%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
 
 /*LOGIN*/
-
 #sectionLogin {
-    background-color: rgba(128, 0, 0, 0.7);
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 40%;
-    width: 100%;
-    height: 400px;
+  background-color: rgba(128, 0, 0, 0.7);
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 40%;
+  width: 100%;
+  height: 400px;
 }
 
-#sectionLogin>form {
-    width: 70%;
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
+#sectionLogin > form {
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
 }
 
-#sectionLogin>form>input {
-    margin-top: 1%;
+#sectionLogin > form > input {
+  margin-top: 1%;
 }
 
 #btn-submit {
-    border-style: none;
-    background-color: white;
-    color: brown;
+  border-style: none;
+  background-color: white;
+  color: brown;
 }
 
-#sectionLogin>h1 {
-    color: white;
-    text-shadow: 10px 5px 6px black;
-    text-align: center;
+#sectionLogin > h1 {
+  color: white;
+  text-shadow: 10px 5px 6px black;
+  text-align: center;
 }
-
 
 /*SECTION ADMIN*/
+#section-agregar {
+  grid-area: admin;
+}
 
 #section-agregar {
-    grid-area: admin;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  margin-left: 30%;
 }
 
-#section-agregar {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 100%;
-    margin-left: 30%;
+#section-agregar > select {
+  width: 30%;
+  border-style: none;
+  background-color: brown;
+  color: white;
+  margin-left: 55%;
 }
 
-#section-agregar>select {
-    width: 30%;
-    border-style: none;
-    background-color: brown;
-    color: white;
-    margin-left: 55%;
-}
-
-#section-agregar>select>option {
-    background-color: brown;
-    color: white;
+#section-agregar > select > option {
+  background-color: brown;
+  color: white;
 }
 
 #btn-agregar {
-    border-style: none;
-    border-radius: 50%;
-    width: 60%;
-    height: 100%;
-    font-size: 20px;
-    margin-left: 40%;
-    margin-top: 2%;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+47,6d0019+77 */
-    background: #a90329;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0);
-    /* IE6-9 */
+  border-style: none;
+  border-radius: 50%;
+  width: 60%;
+  height: 100%;
+  font-size: 20px;
+  margin-left: 40%;
+  margin-top: 2%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+47,6d0019+77 */
+  background: #a90329;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+  /* IE6-9 */
 }
 
-#btn-agregar>a {
-    text-decoration: none;
-    color: white;
+#btn-agregar > a {
+  text-decoration: none;
+  color: white;
 }
 
 #btn-agregar:hover {
-    box-shadow: 4px 4px 8px brown;
+  box-shadow: 4px 4px 8px brown;
 }
 
 .is-sectionAgregarPeliOGen {
-    grid-area: agregarPeliGen;
-    width: 100%;
-    height: 100%;
+  grid-area: agregarPeliGen;
+  width: 100%;
+  height: 100%;
 }
-
 
 /*SECTION ADD*/
-
 .section-formAdd {
-    padding-left: 1%;
-    width: 99%;
-    height: 100%;
-    background-color: rgba(128, 0, 0, 0.7);
+  padding-left: 1%;
+  width: 99%;
+  height: 100%;
+  background-color: rgba(128, 0, 0, 0.7);
 }
 
-.section-formAdd>form {
-    display: grid;
-    grid-template-columns: auto auto;
+.section-formAdd > form {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.section-formAdd>form>input {
-    width: 80%;
-    margin: 1% 0% 1% 0%;
+.section-formAdd > form > input {
+  width: 80%;
+  margin: 1% 0% 1% 0%;
 }
 
 .is-btn-submit {
-    border-style: none;
-    color: brown;
-    background-color: burlywood;
+  border-style: none;
+  color: brown;
+  background-color: burlywood;
 }
 
-.section-formAdd>h1 {
-    color: white;
+.section-formAdd > h1 {
+  color: white;
 }
+
+/*# sourceMappingURL=pelisgrettaestilo.css.map */

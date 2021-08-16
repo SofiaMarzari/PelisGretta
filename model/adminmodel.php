@@ -48,20 +48,23 @@
         }
 
         
-        public function addComentario($comentario, $idPeli, $idUsr){
-            $data = $this->db->prepare("INSERT INTO comentario(comentario, id_usuario, id_pelicula) VALUES(?,?,?)");
-            $data->execute(array($comentario, $idUsr, $idPeli));
+        public function addComentario($comentario, $idPeli, $nomUsr){
+            $data = $this->db->prepare("INSERT INTO comentario(comentario, usuarioNombre, id_pelicula) VALUES(?,?,?)");
+            $data->execute(array($comentario, $nomUsr, $idPeli));
         }
        
 
-        public function getComentarios(){
-            $datos = $this->db->prepare("SELECT * FROM comentario");
-            $datos->execute();
+        public function getComentarios($idPelicula){
+            $datos = $this->db->prepare("SELECT * FROM comentario WHERE id_pelicula=(?)");
+            $datos->execute(array($idPelicula));
             $result = $datos->fetchAll();
             return $result;
         }
 
-
+        public function deleteComentario($id){
+            $consult = $this->db->prepare("DELETE FROM comentario WHERE id_comentario=(?)");
+            $consult->execute(array($id));
+        }
     }
 
 ?>

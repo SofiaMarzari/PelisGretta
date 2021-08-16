@@ -1,15 +1,15 @@
 <?php
     require_once("model/adminmodel.php");
-    require_once("apiview/apiview.php");
+    require_once("api/apiview/apiview.php");
 
     class apicontroller{
         private $modeladmin;
-        private $viewapi;
+        private $apiview;
         private $data;
 
         public function __construct(){
             $this->modeladmin = new adminmodel();
-            $this->viewapi = new apiview();
+            $this->apiview = new apiview();
             $this->data = file_get_contents("php://input");
         }
 

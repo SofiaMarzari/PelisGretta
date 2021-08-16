@@ -36,12 +36,13 @@
             $this->smarty->display('templates/itemgenero.tpl');
         }
 
-        public function verPelicula($result, $peli, $admin, $nomUsr){
+        public function verPelicula($result, $peli, $admin, $nomUsr, $comentarios){
             $this->smarty = new Smarty();
             $this->smarty->assign('listaGeneros', $result);
             $this->smarty->assign('pelicula', $peli);
             $this->smarty->assign('admin', $admin);
             $this->smarty->assign('nomUsr', $nomUsr);
+            $this->smarty->assign('comentarios', $comentarios);
             $this->smarty->display('templates/pelicula.tpl');
         }
 

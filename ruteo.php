@@ -82,6 +82,10 @@
             $controller = new admincontroller();
             $controller->agregarComentario($partesURL[1]);
             break;
+        case 'eliminarComentario':
+            $controller = new admincontroller();
+            $controller->eliminarComentario($partesURL[1], $partesURL[2]);
+            break;
     }
 
    

@@ -1,5 +1,5 @@
 <?php
-    require_once("apicontroller/apicontroller.php");
+    require_once("api/apicontroller/apicontroller.php");
 
     class apiView{
       /*Esta función recibe la data del model, del controller, y el estado.

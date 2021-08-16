@@ -5,7 +5,17 @@
         <img class="imgpelicula" src="{$pelicula[0]['imagen']}" alt="peli">
         <h1>{$pelicula[0]['nombre']}</h1>
         <p>{$pelicula[0]['descripcion']}</p>
-        <section id="section-listaComentarios">
+        <section id="sectionComentarios">
+            <h3>Comentarios</h3>
+            {foreach from=$comentarios item=coment}
+                <article>
+                    <p>{$coment['usuarioNombre']}:</p>
+                    <p>{$coment['comentario']}</p>
+                    {if $coment['usuarioNombre']==$nomUsr}   
+                        <a id="btn-deletComent" href="eliminarComentario/{$coment['id_comentario']}}/{$pelicula[0]['id_pelicula']}">Eliminar</a>
+                    {/if}
+                </article>
+            {/foreach}
         </section>
         {if $admin == true}
             <section id="is-sectionformcomentario">

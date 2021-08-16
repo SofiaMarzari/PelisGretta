@@ -1,16 +1,19 @@
 <?php
     require_once('view/view.php');
     require_once('model/model.php');
+    require_once('model/adminmodel.php');
 
    class controller{
     
     private $view;
     private $model;
+    private $modelAdmin;
     private $listgeneros;
 
     public function __construct(){
         $this->view = new view();
         $this->model = new model();
+        $this->modelAdmin = new adminmodel();
         $this->listgeneros = $this->pedirGeneros();
     }
 
@@ -29,12 +32,13 @@
         session_start();
         if(isset($_SESSION['nombreUsuario'])){
             $admin = true;
-            $nomAdmin = $_SESSION['nombreUsuario'];
+            $nomAdmin = $_SESSION['nombreUsuario'];          
         }else{
             $admin = false;
             $nomAdmin = null;
         }
-        $this->view->verPelicula($this->listgeneros, $pelicula, $admin, $nomAdmin);
+        $comentarios = $this->modelAdmin->getComentarios($idPelicula);
+        $this->view->verPelicula($this->listgeneros, $pelicula, $admin, $nomAdmin, $comentarios);
     }
 
     public function mostrarNoticias(){

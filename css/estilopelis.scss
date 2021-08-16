@@ -1,0 +1,464 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/df/e6/bb/dfe6bb9dae0dddfeb956fa5467ba39f2.jpg);
+}
+$colorBlanco : white;
+$colorPrincipal : rgba(128, 0, 0, 0.7);
+$max : 100%;
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+#contenedorPrincipal {
+    background-color: rgba(255, 250, 240, 0.5);
+    height: $max;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "galeria galeria galeria galeria" "admin admin top5 top5" "admin admin top5 top5" "agregarPeliGen agregarPeliGen top5 top5" "agregarPeliGen agregarPeliGen top5 top5" "ultimasAgr ultimasAgr top5 top5" "ultimasAgr ultimasAgr top5 top5";
+}
+
+
+/*ENCABEZADO*/
+
+header {
+    @include flexRow;
+    justify-content: space-between;
+}
+
+header>h1 {
+    font-size: 70px;
+    font-style: italic;
+    color: $colorBlanco;
+}
+
+header>a {
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+#is-spanTitle {
+    font-family: fantasy;
+    font-style: oblique;
+    font-variant: small-caps;
+    color: $colorBlanco;
+}
+
+
+/*NAVEGACION*/
+
+nav {
+    border-radius: 10px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+47,6d0019+77 */
+    background: #a90329;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+    /* IE6-9 */
+    height: 35px;
+}
+
+#navUlPrincipal {
+    background: #a90329;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+    /* IE6-9 */
+    @include flexRow;
+    height: 30px;
+}
+
+#navUlPrincipal>li {
+    list-style-type: none;
+    color: $colorBlanco;
+    width: 23%;
+    height: $max;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+}
+
+.sobrelosli {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+21,8f0222+44,6d0019+100 */
+    background: rgb(169, 3, 41);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 21%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(169, 3, 41, 1) 21%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(169, 3, 41, 1) 21%, rgba(143, 2, 34, 1) 44%, rgba(109, 0, 25, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1)";
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+#is-ulGeneros {
+    margin-top: 3%;
+}
+
+#is-ulGeneros>li {
+    list-style-type: none;
+    width: $max;
+    height: $max;
+    padding: 15% 0% 5% 0%;
+    border-radius: 0% 0% 50% 50%;
+    background: #a90329;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+    /* IE6-9 */
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+    position: relative;
+    z-index: 11;
+}
+
+#is-ulGeneros>li>a {
+    text-decoration: none;
+    color: $colorBlanco;
+}
+
+#navUlPrincipal>li>a {
+    text-decoration: none;
+    color: $colorBlanco;
+}
+
+
+/*GALERIA*/
+
+#section-galeria {
+    width: $max;
+    height: 400px;
+    @include flexRow;
+    grid-area: galeria;
+}
+
+.is-imgsGaleria {
+    height: $max;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*SECTION ULTIMAS AGREGADAS*/
+
+#section-utlimasAgregadas {
+    grid-area: ultimasAgr;
+    margin-left: 0.5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    height: $max;
+}
+
+
+/*SECTION TOP 5 INICIO*/
+
+#section-top5 {
+    grid-area: top5;
+    height: 80%;
+    width: $max;
+    margin-right: 10%;
+    margin-top: 1%;
+    background-color: rgba(128, 0, 0, 0.3);
+}
+
+#section-top5>h1 {
+    color: seashell;
+    font-size: 40px;
+    text-shadow: 10px 5px 3px black;
+    text-align: center;
+}
+
+.pelisDelTop {
+    background-color: $colorPrincipal;
+    width: 90%;
+    height: 30%;
+    margin-left: 5%;
+    margin-top: 1%;
+    border-radius: 0% 0% 15% 0%;
+}
+
+
+/*ARTICLE REDES SOCIALES*/
+
+#article-redesSocialesInicio {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 7;
+}
+
+.is-redesSociales {
+    height: 3%;
+    width: 3%;
+    border-radius: 10%;
+    margin: 2px;
+}
+
+
+/*GENERO PARTICULAR*/
+
+#is-contenedorPeliculasGenero {
+    @include flexRow;
+    width: 90%;
+    height: $max;
+}
+
+.is-sectionPeliculaGenero {
+    margin: 1%;
+    width: 250px;
+    height: 500px;
+    border-radius: 1%;
+}
+
+.is-sectionPeliculaGenero:hover {
+    background-color: $colorPrincipal;
+    box-shadow: 0px 0px 15px $colorBlanco;
+}
+
+.is-sectionPeliculaGenero:hover>p {
+    color: $colorBlanco;
+}
+
+.is-sectionPeliculaGenero{
+    p {
+        text-align: center;
+        color: brown;
+        margin: 0%;
+    }
+}
+
+.is-sectionPeliculaGenero>button {
+    width: 30%;
+    height: 7%;
+    font-size: $max;
+    border-style: none;
+    border-radius: 45%;
+    background-color: $colorBlanco;
+    margin-left: 37%;
+    margin-top: 3%;
+}
+
+.is-sectionPeliculaGenero>button>a {
+    text-decoration: none;
+    color: brown;
+}
+
+
+/*PELICULA PARTICULAR*/
+
+#is-sectionPeliculaParticular {
+    width: 80%;
+    height: $max;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "imgPeli h1Peli h1Peli" "imgPeli pPeli pPeli" "listaComentPeli listaComentPeli listaComentPeli" "formComentPeli formComentPeli formComentPeli";
+}
+
+.imgpelicula {
+    margin-left: 27px;
+    margin-top: 5%;
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+#is-sectionPeliculaParticular>img {
+    grid-area: imgPeli;
+}
+
+#is-sectionPeliculaParticular>h1 {
+    grid-area: h1Peli;
+    margin-left: 2%;
+}
+
+#is-sectionPeliculaParticular>p {
+    grid-area: pPeli;
+    margin-left: 2%;
+}
+
+/*COMENTARIOS*/
+
+#is-sectionformcomentario {
+    grid-area: formComentPeli;
+    background-color: $colorPrincipal;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 50%;
+}
+#sectionComentarios{
+    width: 50%;
+    height: $max;
+    margin: 2%;
+    grid-area: listaComentPeli;
+    background-color: $colorPrincipal;
+}
+#sectionComentarios > article{
+    height: 50%;
+}
+#sectionComentarios > article > p{
+    color: $colorBlanco;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+#sectionComentarios > article > p:nth-child(0n+2){
+    margin-left: 20%;
+    margin-top: 0%;
+}
+
+#btn-deletComent{
+    text-decoration: none;
+    color: black;
+    background-color: $colorBlanco;
+    width: 10%;
+    height: 10%;
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+/*LOGIN*/
+
+#sectionLogin {
+    background-color: $colorPrincipal;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 40%;
+    width: $max;
+    height: 400px;
+}
+
+#sectionLogin>form {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionLogin>form>input {
+    margin-top: 1%;
+}
+
+#btn-submit {
+    border-style: none;
+    background-color: $colorBlanco;
+    color: brown;
+}
+
+#sectionLogin>h1 {
+    color: $colorBlanco;
+    text-shadow: 10px 5px 6px black;
+    text-align: center;
+}
+
+
+/*SECTION ADMIN*/
+
+#section-agregar {
+    grid-area: admin;
+}
+
+#section-agregar {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: $max;
+    margin-left: 30%;
+}
+
+#section-agregar>select {
+    width: 30%;
+    border-style: none;
+    background-color: brown;
+    color: $colorBlanco;
+    margin-left: 55%;
+}
+
+#section-agregar>select>option {
+    background-color: brown;
+    color: $colorBlanco;
+}
+
+#btn-agregar {
+    border-style: none;
+    border-radius: 50%;
+    width: 60%;
+    height: $max;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-top: 2%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+47,6d0019+77 */
+    background: #a90329;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a90329 0%, #8f0222 47%, #6d0019 77%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=0)";
+    /* IE6-9 */
+}
+
+#btn-agregar>a {
+    text-decoration: none;
+    color: $colorBlanco;
+}
+
+#btn-agregar:hover {
+    box-shadow: 4px 4px 8px brown;
+}
+
+.is-sectionAgregarPeliOGen {
+    grid-area: agregarPeliGen;
+    width: $max;
+    height: $max;
+}
+
+
+/*SECTION ADD*/
+
+.section-formAdd {
+    padding-left: 1%;
+    width: 99%;
+    height: $max;
+    background-color: $colorPrincipal;
+}
+
+.section-formAdd>form {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.section-formAdd>form>input {
+    width: 80%;
+    margin: 1% 0% 1% 0%;
+}
+
+.is-btn-submit {
+    border-style: none;
+    color: brown;
+    background-color: burlywood;
+}
+
+.section-formAdd>h1 {
+    color: $colorBlanco;
+}
